@@ -1,10 +1,12 @@
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
+import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
+    <link rel="manifest" href="/manifest.json" />
     <App />
   </React.StrictMode>,
   document.getElementById('root')

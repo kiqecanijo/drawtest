@@ -1,23 +1,20 @@
-import * as React from 'react'
-import './App.css'
+import React, { useEffect } from 'react'
 
-function App () {
+const App = () => {
+  useEffect(() => {
+    fetch('https://landing.backend.mivest.io/challenge')
+      .then(res => res.json())
+      .then(console.log)
+      .catch(e => {
+        throw new Error(e)
+      })
+  }, [])
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <header className="App-header">
+      <p>
+        Edit <code>src/App.tsx</code> and save to reload.
+      </p>
+    </header>
   )
 }
 
