@@ -16,3 +16,9 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
+
+canvas {
+  width: 40vw;
+  height: 45vh;
+  border-radius: 20px;
+}
