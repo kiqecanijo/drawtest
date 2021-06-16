@@ -20,5 +20,5 @@ body {
 canvas {
   width: 40vw;
   height: 45vh;
-  border-radius: 20px;
+  border-radius: 5px;
 }
