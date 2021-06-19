@@ -69,7 +69,9 @@ const App = () => {
 
     const tempDots = []
 
-    const printDot = ([{ x, y }, skipTop = false]) => {
+    type NextMovType = [{ x: number; y: number }, boolean]
+
+    const printDot = ([{ x, y }, skipTop = false]: NextMovType) => {
       tempDots.push({ x, y })
       const up =
         !skipTop &&
@@ -84,8 +86,10 @@ const App = () => {
         .reverse()
         .find(() => true)
 
-      const nextMov =
-        (up && [up]) || (right && [right]) || (down && [down, true])
+      const nextMov: NextMovType =
+        (up && [up, false]) ||
+        (right && [right, false]) ||
+        (down && [down, true])
 
       nextMov && printDot(nextMov)
     }
