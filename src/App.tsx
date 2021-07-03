@@ -16,7 +16,7 @@ const App = () => {
   const barsRef = useRef(null)
   const shadowRef = useRef(null)
 
-  const mapBars = data => {
+  const mapBars = (data: { [s: string]: number[] } | ArrayLike<number[]>) => {
     const dataSet: number[][] = Object.values(data)
 
     const transponse = dataSet[0]
