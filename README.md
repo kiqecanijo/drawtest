@@ -8,7 +8,7 @@
 
 ## Installation
 
-this proyect was made using create react app ⚛️:
+this project was made using create react app ⚛️:
 
 - Clone this repo:
   `git clone git@github.com:kiqecanijo/drawtest.git`
