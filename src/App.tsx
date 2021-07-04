@@ -1,11 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react'
-const dummyData = {
-  message: {
-    x: [62, 111, 166, 107, 87],
-    y: [181, 184, 127, 78, 134],
-    w: [27, 33, 32, 22, 49]
-  }
-}
 const [WIDTH, HEIGHT] = [300, 300]
 
 const App = () => {
