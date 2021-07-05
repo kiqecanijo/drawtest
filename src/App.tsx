@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 const [WIDTH, HEIGHT] = [300, 300]
 
 const App = () => {
-  const [charts, setCharts] = useState([]) // 📊
+  const [charts, setCharts] = useState<{ x: number, y: number, w: number }[]>([{ x: 0, y: 0, w: 0 }]) // 📊
   const [dots, setDots] = useState([])
 
   // 🖼 ref init
